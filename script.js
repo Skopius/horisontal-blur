@@ -18,7 +18,12 @@ function overflowBlur(element) {
     }
 }
 
+const overflowElement = document.querySelector(".main-overflow");
 
-$('.prodecor-overflow').on('scroll', function() {
+overflowElement.addEventListener("scroll", function() {
     overflowBlur(this);
-})
+});
+
+window.addEventListener("resize", function() {
+    overflowBlur(overflowElement);
+});
