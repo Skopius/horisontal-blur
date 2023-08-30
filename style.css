@@ -1,0 +1,31 @@
+.main-row {
+    position: relative;
+}
+
+.promaindecor-overflow {
+    overflow-x: auto;
+}
+
+.rightBlur,
+.leftBlur {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 15px;
+    display: none;
+}
+
+.rightBlur.show,
+.leftBlur.show {
+    display: block;
+}
+
+.rightBlur {  
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255, 0.8));
+}
+
+.leftBlur {
+    left: 0;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
